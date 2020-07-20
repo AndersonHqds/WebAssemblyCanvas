@@ -56,8 +56,8 @@ int main() {
     animationData[i].x = x;
     animationData[i].y = y;
     animationData[i].r = radius;
-    animationData[i].xv = getRand(10);
-    animationData[i].yv = getRand(10);
+    animationData[i].xv = getRand(5);
+    animationData[i].yv = getRand(5);
     animationData[i].xd = 1;
     animationData[i].yd = 1;
 
