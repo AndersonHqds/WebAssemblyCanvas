@@ -27,7 +27,6 @@
       // Render circles on canvas
 
       const render = (dataLength, circlesStructSize) => {
-        console.log('dataLength', dataLength);
         // Get circle data from C - Typed Array
         let circles = new Int32Array(buffer, _getCircles(canvas.width, canvas.height), dataLength);
 
@@ -43,8 +42,6 @@
           context.fillStyle = `rgba(${circle[3]}, ${circle[4]}, ${circle[5]}, 0.75)`;
           context.fill();
         }
-
-        console.log('rendered');
 
         // Request next animation frame and re-render with updated circles
         window.requestAnimationFrame(() => {
